@@ -26,7 +26,7 @@ export default defineConfig({
 		rules: {
 			'unicorn/no-array-for-each': 'deny',
 			'no-useless-concat': 'deny',
-			'no-void': 'deny',
+			'no-void': ['deny', { allowAsStatement: true }],
 			'unicorn/prefer-date-now': 'deny',
 			'max-params': ['warn', { max: 6 }],
 			'no-undef': 'deny',
