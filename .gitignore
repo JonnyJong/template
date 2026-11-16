@@ -1,0 +1,7 @@
+# 构建
+node_modules
+
+# 工具
+.codegraph
+.serena/*
+!.serena/project.yml

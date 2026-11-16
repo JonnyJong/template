@@ -1,0 +1,31 @@
+{
+	"name": "template",
+	"version": "0.0.0",
+	"private": true,
+	"keywords": [],
+	"license": "MIT",
+	"author": "JonnyJong",
+	"type": "module",
+	"scripts": {
+		"prepare": "bash scripts/prepare.sh",
+		"vp": "vp",
+		"check": "vp check",
+		"lint": "vp lint",
+		"fmt": "vp fmt",
+		"test": "vp test",
+		"staged": "vp staged"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^21.2.4",
+		"@commitlint/config-conventional": "^21.2.4",
+		"vite-plus": "^1.6.0"
+	},
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "12.21.0",
+			"onFail": "download"
+		}
+	},
+	"packageManager": "pnpm@12.21.0"
+}

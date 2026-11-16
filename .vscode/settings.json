@@ -1,0 +1,12 @@
+{
+	"[json][typescript][javascript]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode",
+		"editor.codeActionsOnSave": {
+			"source.format.oxc": "explicit",
+			"source.organizeImports": "explicit",
+			"source.organizeLinkDefinitions": "explicit",
+			"source.removeUnusedImports": "explicit",
+			"source.sortImports": "explicit"
+		}
+	}
+}

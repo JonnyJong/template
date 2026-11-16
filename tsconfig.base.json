@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		// 检查
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"allowJs": false,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		// 特性
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"erasableSyntaxOnly": true,
+		// 输出
+		"newLine": "lf"
+	}
+}
