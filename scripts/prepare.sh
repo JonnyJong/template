@@ -5,12 +5,12 @@ ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT_DIR"
 
 # Vite+ 钩子
-if [[ -x "node_modules/.bin/vp" ]]; then
-  echo "[prepare] Vite+ 钩子" >&2
-  node_modules/.bin/vp config --no-agent
-else
-  echo "[prepare] 跳过 Vite+：未找到 vp" >&2
-fi
+# if [[ -x "node_modules/.bin/vp" ]]; then
+#   echo "[prepare] Vite+ 钩子" >&2
+#   node_modules/.bin/vp config --no-agent
+# else
+#   echo "[prepare] 跳过 Vite+：未找到 vp" >&2
+# fi
 
 # CodeGraph 初始化
 if command -v codegraph >/dev/null 2>&1; then

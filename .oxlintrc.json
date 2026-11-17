@@ -1,0 +1,110 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "warn",
+    "nursery": "off",
+    "pedantic": "off",
+    "perf": "off",
+    "restriction": "off",
+    "style": "off",
+    "suspicious": "warn"
+  },
+  "rules": {
+    "typescript/ban-types": "off",
+    "unicorn/no-array-for-each": "error",
+    "no-useless-concat": "error",
+    "no-void": "error",
+    "unicorn/prefer-date-now": "error",
+    "max-params": [
+      "warn",
+      {
+        "max": 6
+      }
+    ],
+    "no-undef": "error",
+    "no-unused-vars": "error",
+    "no-unused-private-class-members": "error",
+    "radix": "off",
+    "no-await-in-loop": "warn",
+    "oxc/no-barrel-file": "error",
+    "typescript/no-inferrable-types": "warn",
+    "no-negated-condition": "error",
+    "no-nested-ternary": "error",
+    "typescript/no-non-null-assertion": "off",
+    "node/no-process-env": "error",
+    "no-restricted-globals": [
+      "error",
+      "event",
+      "error"
+    ],
+    "unicorn/prefer-string-slice": "error",
+    "no-else-return": "error",
+    "yoda": "error",
+    "no-array-constructor": "error",
+    "typescript/prefer-as-const": "warn",
+    "unicorn/prefer-at": "warn",
+    "no-lonely-if": "error",
+    "unicorn/no-lonely-if": "error",
+    "typescript/array-type": "error",
+    "unicorn/new-for-builtins": "error",
+    "typescript/explicit-member-accessibility": [
+      "error",
+      {
+        "accessibility": "no-public"
+      }
+    ],
+    "object-shorthand": "error",
+    "default-param-last": "error",
+    "unicorn/explicit-length-check": "warn",
+    "typescript/prefer-for-of": "error",
+    "grouped-accessor-pairs": "error",
+    "unicorn/prefer-node-protocol": "error",
+    "prefer-object-spread": "warn",
+    "operator-assignment": "warn",
+    "one-var": [
+      "error",
+      "never"
+    ],
+    "prefer-template": "error",
+    "unicorn/throw-new-error": "error",
+    "no-throw-literal": "error",
+    "unicorn/prefer-string-trim-start-end": "warn",
+    "arrow-body-style": "warn",
+    "no-alert": "warn",
+    "no-constant-binary-expression": "warn",
+    "oxc/no-const-enum": "off",
+    "no-debugger": "warn",
+    "typescript/no-explicit-any": "off",
+    "no-unassigned-vars": "warn",
+    "no-var": "error",
+    "typescript/adjacent-overload-signatures": "off",
+    "require-await": "warn",
+    "unicorn/error-message": "warn",
+    "guard-for-in": "warn",
+    "unicorn/require-number-to-fixed-digits-argument": "warn",
+    "unicorn/prefer-response-static-json": "warn"
+  },
+  "plugins": [
+    "oxc",
+    "typescript",
+    "unicorn",
+    "node"
+  ],
+  "ignorePatterns": [
+    "**/node_modules",
+    "**/dist",
+    "**/*.d.ts"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": null,
+      "linkComponents": [],
+      "formComponents": [],
+      "componentWrapperFunctions": []
+    }
+  }
+}
