@@ -6,6 +6,18 @@ export default defineConfig({
 		node: true,
 		esnext: true,
 	},
+	plugins: ['oxc', 'typescript', 'unicorn', 'node'],
+	// 默认规则
+	categories: {
+		correctness: 'warn',
+		suspicious: 'warn',
+		nursery: 'off',
+		pedantic: 'off',
+		perf: 'off',
+		restriction: 'off',
+		style: 'off',
+	},
+	// 附加规则
 	rules: {
 		'unicorn/no-array-for-each': 'deny',
 		'no-useless-concat': 'deny',
@@ -13,6 +25,8 @@ export default defineConfig({
 		'unicorn/prefer-date-now': 'deny',
 		'max-params': ['warn', { max: 6 }],
 		'no-undef': 'deny',
+		'no-unused-vars': 'error',
+		'no-unused-private-class-members': 'error',
 		radix: 'warn',
 		'no-await-in-loop': 'warn',
 		'typescript/no-inferrable-types': 'warn',
@@ -20,7 +34,7 @@ export default defineConfig({
 		'no-nested-ternary': 'error',
 		'typescript/no-non-null-assertion': 'warn',
 		'node/no-process-env': 'error',
-		'no-restricted-globals': 'error',
+		'no-restricted-globals': ['error', 'event', 'error'],
 		'unicorn/prefer-string-slice': 'error',
 		'no-else-return': 'error',
 		yoda: 'error',
@@ -59,4 +73,6 @@ export default defineConfig({
 		'unicorn/require-number-to-fixed-digits-argument': 'warn',
 		'unicorn/prefer-response-static-json': 'warn',
 	},
+	// oxlint 不完全支持 Vue SFC，忽略并由 eslint 处理
+	ignorePatterns: ['**/*.vue'],
 });
